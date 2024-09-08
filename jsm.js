@@ -20,7 +20,8 @@ const quizQuestions = [
 let score = 0;
 
 for (let i = 0; i < quizQuestions.length; i++) {
-    console.log(currentQuestion = quizQuestions[i]);
+    if(currentQuestion = quizQuestions[i]) 
+    console.log(currentQuestion);
 
     const userAnswer = prompt(currentQuestion.question + " " + currentQuestion.answers);
     if (userAnswer == currentQuestion.correctAnswer) {
